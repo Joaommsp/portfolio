@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Reset CSS Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Poppins', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: 'Outfit', sans-serif; -->
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/script/profileData.js" defer></script>
+    <script src="assets/script/main.js" defer></script>
+    <script src="assets/script/scrollReveal.js" defer></script>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Portfólio João M</title>
+  </head>
+
+  <body class="body bg-dark-color">
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span id="portfolio">Portfólio</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bem vindo ao meu Portfólio</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Habilidades</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Entrar em contato
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/joão-marcos-525564226/">Linkedin</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="https://github.com/Joaommsp">GitHub</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+
+      <div class="switchTheme">
+          <input type="checkbox" class="themeSwitcher">
+      </div>
+
+      <header class="header">
+        <img
+          src="img/profile-pic.png"
+          alt="Foto de perfil de João Marcos"
+          class="myPfp"
+        />
+        <h1 class="text-white">
+          Olá, <br />
+          eu sou <span class="myName"></span>
+        </h1>
+        <span class="function"></span>
+        <div class="information">
+          <div class="container">
+            <p>
+              <img src="img/svg/map.svg" alt="Map" /><a
+                href="https://maps.app.goo.gl/H2BeWcNtExnape8YA"
+                >Paulo Afonso-BA</a
+              >
+            </p>
+            <p>
+              <img src="img/svg/linkedin.svg" alt="Linkedin Logo" />
+              <a href="https://www.linkedin.com/in/joão-marcos-525564226/"
+                >Linkedin</a
+              >
+            </p>
+            <p>
+              <img src="img/svg/github.svg" alt="GutHub Logo" />
+              <a href="https://github.com/Joaommsp">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <main>
+
+        <div class="container aboutMe" id="about">
+          <h2 class="text-light">Sobre mim</h2>
+          <p>
+            Meu nome é João Marcos , tenho 20 anos e estudo Sistemas de
+            Informação no UNIRIOS Centro Universitário, atualmente trabalho como
+            diagramador e impressão digital, meu objetivo é me tornar um
+            desenvolvedor WEB Front-End, sou aluno da DIO PRO onde estou me
+            capacitando para ser um grande profissional de tecnologia , meus
+            focos são JavaScript e seus frameworks junto com UX e UI mas estou
+            disposto a novos desafios e a eventuais necessidades de mudanças dos
+            mesmos para entrar no mercado de tecnologia.
+          </p>
+        </div>
+
+        <div class="container skills" id="skills">
+          <h2 class="text-light">Habilidades</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <span class="slillName">HTML5</span>
+                <img
+                  src="img/svg/skills-icons/html-icon.svg"
+                  alt="html5 icon"
+                />
+              </div>
+              <div class="col">
+                <span class="slillName">CSS3</span>
+                <img src="img/svg/skills-icons/css-icon.svg" alt="CSS3 icon" />
+              </div>
+              <div class="col">
+                <span class="slillName">JavaScript</span>
+                <img
+                  src="img/svg/skills-icons/js-icon.svg"
+                  alt="JavaScript icon"
+                />
+              </div>
+              <div class="col">
+                <span class="slillName">Git</span>
+                <img src="img/svg/skills-icons/git-icon.svg" alt="Git icon" />
+              </div>
+            </div>
+            <h2 class="text-light">Começarei em breve</h2>
+            <div class="row">
+              <div class="col">
+                <span class="slillName">Angular</span>
+                <img
+                  src="img/svg/skills-icons/angular.svg"
+                  alt="Angular icon"
+                />
+              </div>
+              <div class="col">
+                <span class="slillName">React</span>
+                <img
+                  src="img/svg/skills-icons/react-icon.svg"
+                  alt="Recat icon"
+                />
+              </div>
+              <div class="col">
+                <span class="slillName">TypeScript</span>
+                <img
+                  src="img/svg/skills-icons/typeScript-icon.svg"
+                  alt="TypeScript icon"
+                />
+              </div>
+              <div class="col">
+                <span class="slillName">Designer</span>
+                <span id="UX">UX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container dropDown">
+          <div class="container dropDownControl">
+            <span class="text-light">Idiomas</span>
+            <img class="arrow" src="img/svg/arrows/arrowDown.svg" alt="arrow" />
+          </div>
+          <div class="container points">
+            <div class="pointsLangPt closed">
+              <span class="text-light">Português BR</span>
+              <div></div>
+              <span style="margin-top: .5rem;">Português fluente</span>
+            </div>
+            <div class="pointsLangEn closed">
+              <span class="text-light">Inglês</span>
+              <div></div>
+              <span style="margin-top: .5rem;">Inglês básico p/intermed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container githubData">
+          <h2 class="text-light">GitHub <a href="https://github.com/Joaommsp"><img src="img/svg/acessLink.svg" alt="acessar gitHub" id="acessGitHub"></a> </h2>
+          <img src="" alt="Foto de perfil do github" class="userGitHubImg">
+          <div class="profile">
+          </div>
+          <div class="gitHubSkills">
+          </div>
+        </div>
+
+        <div class="container courses">
+          <h2 class="text-light">Formações</h2>
+          <span id="dioTitle">DIO</span>
+          <div class="dioCourses">
+            <div class="course">
+              <span class="courseName">Formação HTML5</span>
+              <img src="img/courses/html.png" alt="Formação HTML5">
+            </div>
+            <div class="course">
+              <span class="courseName">Formação HTML5</span>
+              <img src="img/courses/css.png" alt="Formação CSS3">
+            </div>
+            <div class="course">
+              <span class="courseName">Formação JavaScript</span>
+              <img src="img/courses/js.png" alt="Formação JavaScript">
+            </div>
+            <img src="img/svg/dio.svg" alt="dio Logo" id="dioLogo">
+          </div>
+<!-- 
+          <div class="udemyCourses">
+            <h2 class="text-light">Cursos</h2>
+            <span>Udemy</span>
+            <div class="course">
+              <img src="img/courses/git.jpg" alt="Caertificado git e github">
+              <span class="certificate">Git e GitHub</span>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="container bootcamps">
+          <h2 class="text-light">
+            Bootcamps
+          </h2>
+          <div class="dioCourses">
+            <div class="course">
+              <span class="courseName">Potência Tech Ifood - Desenvolvimento de Jogos</span>
+              <img src="img/courses/potencia-tech.png" alt="Potência tech Ifood">
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
