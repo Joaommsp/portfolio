@@ -21,7 +21,7 @@
       githubSkills: document.querySelector('.githubData .gitHubSkills'),
       githubTittle: document.querySelector('.githubData h2'),
       githubAcessLink: document.querySelector('#acessGitHub'),
-      skillName: document.querySelectorAll('.gitHubSkills .gitHubSkill'),
+      skillName: document.querySelectorAll('.gitHubSkill'),
       dioTitle: document.getElementById('dioTitle')
     }
   }
