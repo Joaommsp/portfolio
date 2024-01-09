@@ -305,6 +305,34 @@ h1 {
   display: none;
 }
 
+/* ============Projetos============ */
+
+.projects {
+  margin-top: 6rem;
+}
+
+.projects h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projects img {
+  border-radius: 10px;
+}
+
+.carousel-caption  {
+  background-color: #031322bd;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.custom-video-controls {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 /* ===================GitHub==================== */
 
 .githubData {
@@ -377,7 +405,7 @@ h1 {
   width: 100%;
   gap: 20px;
   padding: 1rem 1rem;
-}
+} 
 
 .gitHubSkill {
   color: var(--text-medium-light-color);
