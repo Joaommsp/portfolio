@@ -472,15 +472,11 @@ h1 {
 }
 
 .courses span {
-  color: var(--text-ultra-light-color);
+  color: var(--text-medium-light-color);
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-#dioTitle {
-  font-size: 1.5em;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-}
 
 .dioCourses {
   position: relative;
@@ -512,14 +508,46 @@ h1 {
 
 .dioCourses img {
   width: 100px;
+  transform: scale(1);
+  transition: .5s;
 }
 
-#dioLogo {
-  position: absolute;
-  bottom: 1rem;
-  margin-top: rem;
-  right: 0;
+
+.dioCourses img:hover {
+  transform: scale(1.1);
 }
+
+.bootcamps h2 {
+  margin-bottom: 2rem;
+}
+
+/* ==========rodapé============================================ */
+
+.container__topBtn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
+}
+
+#topBtn {
+  border: 0;
+  background-color: transparent;
+}
+
+#topBtn img {
+  width: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-medium-light-color);
+}
+
 
 /* .udemyCourses {
   display: flex;
@@ -581,13 +609,6 @@ h1 {
     gap: 5%;
     width: 100%;
     padding-bottom: 6rem;
-  }
-  #dioLogo {
-    position: absolute;
-    bottom: 0;
-    margin-top: rem;
-    right: 0;
-    width: 50px;
   }
 }
 
