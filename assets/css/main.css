@@ -1,0 +1,639 @@
+:root {
+  --primary-color: #031322;
+  --primary-color-light: #e4e4e4;
+  --secondary-color: #ffc436;
+  --text-ultra-light-color: #ffff;
+  --text-medium-light-color: #828282;
+  --text-dark: #0a0a0a;
+  --gray-color: #202020;
+}
+
+/* ================controle de tema======== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.switchTheme input {
+  appearance: none;
+  width: 76px;
+  height: 28px;
+  background-color: var(--text-ultra-light-color);
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.switchTheme input::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: var(--primary-color);
+  background-image: url(../../img/svg/dark.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  left: 22%;
+  transition: all 0.3s ease;
+}
+
+.switchTheme input:checked::before {
+  left: 79%;
+  background-color: transparent;
+  background-image: url(../../img/svg/light.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ====================HEADER====================== */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .myPfp {
+  width: 256px;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.header .myPfp:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--text-ultra-light-color);
+}
+
+.myName {
+  color: var(--secondary-color);
+}
+
+.function {
+  font-size: 1em;
+  height: 1rem;
+  color: var(--text-medium-light-color);
+}
+
+/* ================HEADER > INFORMAÇÕES================ */
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.information div {
+  width: 15rem;
+}
+
+.information p {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  color: var(--text-ultra-light-color);
+}
+
+.information img {
+  width: 24px;
+  margin-right: 0.8rem;
+}
+
+.information a {
+  text-decoration: none;
+  color: var(--text-ultra-light-color);
+  transition: 0.5s;
+}
+
+.information a:hover {
+  color: var(--secondary-color);
+}
+
+/* ==============SOBRE MI============== */
+
+.aboutMe {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.aboutMe h2 {
+  margin-bottom: 1rem;
+}
+
+.aboutMe p {
+  color: var(--text-medium-light-color);
+}
+
+/* ============HABILIDADES============== */
+.skills {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: 2rem;
+}
+
+.skills .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 48px;
+}
+
+.skills .col {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: var(--text-dark);
+  border-bottom: 5px var(--secondary-color) solid;
+  border-top-right-radius: 20px;
+  transform: scale(1);
+  transition: 0.5s;
+  height: 8rem;
+}
+
+.skills .col:hover {
+  transform: scale(1.1);
+}
+
+.skills .slillName {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.skills img {
+  width: 50px;
+}
+
+.skills h2:nth-child(2) {
+  margin-top: 5rem;
+}
+
+#UX {
+  color: var(--secondary-color);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* =============Idiomas============= */
+
+.dropDownControl {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-top: 5rem;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.dropDownControl img {
+  width: 25px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.arrowUp {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.dropDown .points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  height: 0px;
+  background-color: var(--gray-color);
+  border-radius: 5px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+/* =============Medidor============= */
+
+.pointsLangPt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.pointsLangPt span {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.pointsLangPt div::before {
+  content: "";
+  width: 200px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  position: absolute;
+}
+
+.pointsLangPt div {
+  width: 200px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: var(--text-dark);
+  z-index: 2;
+}
+
+.pointsLangEn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointsLangEn span {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.pointsLangEn div::before {
+  content: "";
+  width: 100px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  position: absolute;
+}
+
+.pointsLangEn div {
+  width: 200px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: var(--text-dark);
+  z-index: 2;
+}
+
+.closed {
+  display: none;
+}
+
+/* ============Projetos============ */
+
+.alertVideos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  width: 60%;
+  height: 0px;
+  background-color: var(--primary-color-light);
+  position: fixed;
+  top: 8rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .5s;
+  z-index: 2000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.alertVideos > img {
+  width: 25px;
+  margin-right: .5rem;
+}
+
+.displayNone {
+  display: none;
+}
+
+.projects {
+  margin-top: 5rem;
+  width: 200%;
+}
+
+.projects h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projects p {
+  color: var(--text-medium-light-color);
+  text-align: center
+}
+
+.projects img {
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  background-color: #031322bd;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  border-radius: 10px;
+}
+
+.carousel .slide {
+  width: 100%;
+  height: 100%;
+} 
+
+.custom-video-controls {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ===================GitHub==================== */
+
+.githubData {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  margin-top: 5rem;
+}
+
+.githubData h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.githubData h2 img {
+  width: 25px;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.userGitHubImg {
+  width: 200px;
+  border-radius: 100%;
+  border: 3px solid var(--secondary-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.userGitHubImg:hover {
+  transform: scale(1.2);
+}
+
+.githubData .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.githubData .profile .userGitHubName {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.githubData .profile .userGitHubJob {
+  color: var(--text-medium-light-color);
+}
+
+.githubData .profile .userGitHubLocal {
+  color: var(--text-medium-light-color);
+}
+
+.githubData .profile .userGitHubTel {
+  color: var(--text-medium-light-color);
+}
+
+.githubData .profile .userGitHubEmail {
+  color: var(--text-medium-light-color);
+}
+
+.gitHubSkills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  width: 100%;
+  gap: 20px;
+  padding: 1rem 1rem;
+}
+
+.gitHubSkill {
+  color: var(--text-medium-light-color);
+}
+
+.gitHubSkills .gitHubSkill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gitHubSkills .gitHubSkill img {
+  width: 25px;
+  margin-bottom: 0.5rem;
+}
+/* cursos e certificados ======== */
+/* ========= */
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.courses span {
+  color: var(--text-ultra-light-color);
+}
+
+#dioTitle {
+  font-size: 1.5em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.dioCourses {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 5%;
+  width: 100%;
+  padding-bottom: 6rem;
+}
+
+.dioCourses .course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  background-color: var(--text-dark);
+  width: 100%;
+  padding: 1rem;
+  border-top-right-radius: 20px;
+  border-bottom: 5px solid var(--secondary-color);
+}
+
+.dioCourses .course span {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.dioCourses img {
+  width: 100px;
+}
+
+#dioLogo {
+  position: absolute;
+  bottom: 1rem;
+  margin-top: rem;
+  right: 0;
+}
+
+/* .udemyCourses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.udemyCourses .course  span {
+  color: var(--secondary-color);
+}
+
+.udemyCourses .course {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.udemyCourses img {
+  width: 254px;
+} */
+
+.bootcamps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bootcamps .course span {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+.bootcamps img {
+  width: 100px;
+}
+.bootcamps .course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  background-color: var(--text-dark);
+  width: 100%;
+  padding: 1rem;
+  border-top-right-radius: 20px;
+  border-bottom: 5px solid var(--secondary-color);
+}
+
+@media screen and (max-width: 350px) {
+  .gitHubSkills {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .dioCourses {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 5%;
+    width: 100%;
+    padding-bottom: 6rem;
+  }
+  #dioLogo {
+    position: absolute;
+    bottom: 0;
+    margin-top: rem;
+    right: 0;
+    width: 50px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .information div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 36px;
+  }
+  .aboutMe p {
+    color: var(--text-medium-light-color);
+    padding: 0 8rem;
+  }
+  .container .points {
+    display: flex;
+    flex-direction: row;
+  }
+  .gitHubSkills {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .dioCourses {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .projects {
+    margin-top: 6rem;
+  }
+  .projects h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .projects img {
+    border-radius: 10px;
+  }
+  .carousel-caption {
+    background-color: #031322bd;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+  }
+  .custom-video-controls {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --primary-color: #031322;
+  --primary-color-light: #e4e4e4;
+  --secondary-color: #ffc436;
+  --text-ultra-light-color: #ffff;
+  --text-medium-light-color: #828282;
+  --text-dark: #0a0a0a;
+  --gray-color: #202020;
+}
+
+.bg-dark-color {
+  background-color: var(--primary-color);
+}
+
+.bg-light-color {
+  background-color: var(--primary-color-light);
+}
+
+.main {
+  padding: 5rem 1rem;
+  margin: 1rem;
+}
+
+.navbar {
+  border-bottom: 5px solid var(--secondary-color);
+  transition: .5s;
+}
+
+.offcanvas-body {
+
+  border-bottom: 5px solid var(--secondary-color);
+}
+
+#portfolio {
+  font-weight: bold;
+  margin-left: 2rem;
+}
