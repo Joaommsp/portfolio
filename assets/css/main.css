@@ -312,6 +312,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
+  font-size: .8em;
   width: 60%;
   height: 0px;
   background-color: var(--primary-color-light);
@@ -517,6 +518,13 @@ h1 {
   transform: scale(1.1);
 }
 
+.bootcamps  {
+  width: 100%;
+  height: fit-content;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .bootcamps h2 {
   margin-bottom: 2rem;
 }
@@ -656,5 +664,8 @@ footer {
     height: 70%;
     border-radius: 10px;
     cursor: pointer;
+  }
+  .alertVideos {
+    font-size: 1em;
   }
 }
