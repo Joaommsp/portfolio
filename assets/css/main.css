@@ -379,8 +379,8 @@ h1 {
 
 #projectsNotes {
   text-align: center;
-  color: #ffffff;
   margin: 2rem 0;
+  var(--text-medium-light-color)
 }
 
 /* ===================GitHub==================== */
