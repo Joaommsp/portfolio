@@ -355,10 +355,14 @@ h1 {
 }
 
 .carousel-caption {
-  background-color: #031322bd;
+  background-color: #031322;
   margin-bottom: 2rem;
   padding: 0 2rem;
   border-radius: 10px;
+}
+
+.carousel-caption p{
+  color: #ffffff;
 }
 
 .carousel .slide {
@@ -371,6 +375,12 @@ h1 {
   height: 70%;
   border-radius: 10px;
   cursor: pointer;
+}
+
+#projectsNotes {
+  text-align: center;
+  color: #ffffff;
+  margin: 2rem 0;
 }
 
 /* ===================GitHub==================== */
